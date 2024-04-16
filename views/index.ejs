@@ -4,42 +4,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rocket League Card Game</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <!-- Navigation Bar -->
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Objects</a></li>
-            <li><a href="#">About</a></li>
-        </ul>
-    </nav>
+    <section class="sideBar">
+        <p><a href="http://">Cars</a></p>
+        <p><a href="http://">Classes</a></p>
+        <p><a href="http://">Playstyles</a></p>
+    </section>
+    <section class="mainContent">
+        <section class="searchBar">
+            <input type="text" placeholder="Search...">
+        </section>
+        <section class="cardsField">
 
-    <div class="container">
-        <h1>Object Overview</h1>
-        <input type="text" id="search" placeholder="Search by Name">
-        <table id="object-table">
-            <thead>
-                <tr>
-                    <th>Object Name</th>
-                    <th>Field 1</th>
-                    <th>Field 2</th>
-                    <th>Field 3</th>
-                    <th>Field 4</th>
-                    <th>Field 5</th>
-                    <th>Actions</th>
-                </tr>
-            </thead>
-            <tbody>
-                <!-- Object rows will be dynamically populated here -->
-            </tbody>
-        </table>
-    </div>
+            <% vehicles.forEach(vehicle=> { %>
 
-    <script src="script.js"></script>
+                <section class="cardsContainer">
+                    <section class="actualCards">
+                        <h1>
+                            <%= vehicle.name %>
+                        </h1>
+                        <img src="<%= vehicle.img %>">
+                        <p>
+                            <%= vehicle.type %>
+                        </p>
+                        <p>
+                            <%= vehicle.rarity %>
+                        </p>
+                        <p>
+                            <%= vehicle.playstyle[0] %>
+                                <%= vehicle.playstyle[1]> %>
+                        </p>
+                    </section>
+                </section>
+                <% }) %>
+
+        </section>
+    </section>
 </body>
 
 </html>

@@ -11,6 +11,6 @@ app.get("/", (req, res) => {
     res.render("index");
 });
 
-app.listen(app.get("port"), () =>
+app.listen(app.get("port"), () => {
     console.log("[server] http://localhost:" + app.get("port"))
-);
+});
