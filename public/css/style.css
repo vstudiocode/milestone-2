@@ -25,6 +25,8 @@ body {
 
 .searchBar {
     margin-bottom: 10px;
+    display: flex;
+    gap: 20px;
 }
 
 .cardsField {
