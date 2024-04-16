@@ -28,6 +28,7 @@ body {
 }
 
 .cardsField {
+    text-align: center;
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
@@ -36,8 +37,13 @@ body {
 .actualCards h1 {
     font-weight: bold;
     font-size: 20px;
-    text-align: center;
     margin: 5px;
+}
+
+.actualCards p {
+    text-transform: capitalize;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .cardsContainer section {

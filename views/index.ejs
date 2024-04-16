@@ -10,7 +10,7 @@
 
 <body>
     <section class="sideBar">
-        <p><a href="http://">Cars</a></p>
+        <p><a href="/">Cars</a></p>
         <p><a href="http://">Classes</a></p>
         <p><a href="http://">Playstyles</a></p>
     </section>
@@ -27,7 +27,7 @@
                         <h1>
                             <%= vehicle.name %>
                         </h1>
-                        <img src="<%= vehicle.img %>">
+                        <img src="<%= vehicle.image %>">
                         <p>
                             <%= vehicle.type %>
                         </p>
@@ -35,8 +35,8 @@
                             <%= vehicle.rarity %>
                         </p>
                         <p>
-                            <%= vehicle.playstyle[0] %>
-                                <%= vehicle.playstyle[1]> %>
+                            <%= vehicle.playstyle[0] %> -
+                                <%= vehicle.playstyle[1] %>
                         </p>
                     </section>
                 </section>
