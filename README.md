@@ -1,4 +1,4 @@
-Design wise, it doesn't look that good. I'm not that good at designing stuff.
+Design wise, it doesn't look that good. I'm a backend develper.
 
 My objective was making everything clickable and linked to eachother. Which is succeeded in :).
 
