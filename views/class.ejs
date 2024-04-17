@@ -5,32 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rocket League Cards</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <script src="./js/index.js" defer></script>
 </head>
 
 <body>
     <%- include('sidebar') %>
         <section class="mainContent">
-            <section class="searchBar">
-                <section>
-                    <input id="searchInput" type="text" placeholder="Search...">
-                    <button id="searchButton">Search</button>
-                </section>
-                <section>
-                    <button id="sortNameAsc">Sort Name (ASC)</button>
-                    <button id="sortNameDesc">Sort Name (DESC)</button>
-                    <button id="sortClassAsc">Sort Class (ASC)</button>
-                    <button id="sortClassDesc">Sort Class (DESC)</button>
-                    <button id="sortPlaystyleAsc">Sort First Playstyle (ASC)</button>
-                    <button id="sortPlaystyleDesc">Sort First Playstyle (DESC)</button>
-                    <button id="sortPlaystyleSAsc">Sort Second Playstyle (ASC)</button>
-                    <button id="sortPlaystyleSDesc">Sort Second Playstyle (DESC)</button>
-                </section>
-            </section>
+            <h1>All cars with the class: <%= classe %>
+            </h1>
             <section class="cardsField">
 
                 <% vehicles.forEach(vehicle=> { %>
+
                     <section class="cardsContainer">
                         <section class="actualCards">
                             <a href="../car/<%= vehicle.name %>">

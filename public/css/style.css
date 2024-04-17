@@ -36,6 +36,10 @@ body {
     flex-wrap: wrap;
 }
 
+.actualCards {
+    text-align: center;
+}
+
 .actualCards h1 {
     font-weight: bold;
     font-size: 20px;
@@ -52,4 +56,13 @@ body {
     border: 1px solid black;
     display: block;
     width: min-content;
+}
+
+.classesDisplay {
+    margin: 10px;
+}
+
+.classesDisplay p {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
